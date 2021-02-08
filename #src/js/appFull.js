@@ -8129,9 +8129,9 @@
                 var n = e(t.target).closest("a"),
                     i = n.attr("href");
                 let item = n.closest(".menu__item")[0];
-
                 if(item) {
-                    if(item.classList.contains('item-drop-down')) {
+                   
+                    if(n[0].parentElement.classList.contains('item-drop-down')) {
                         return
                     } else if ("#" === i.charAt(0)) {
                         t.preventDefault(), n.closest(".js-menu").length && (0, r.closeMenu)();

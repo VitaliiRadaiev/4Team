@@ -2,4 +2,5 @@
 @@include('_function.js');
 
 @@include('../common/menu/menu.js');
+@@include('blocks/#testimonials.js');
 

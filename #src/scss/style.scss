@@ -2,8 +2,34 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
+$decorColor: #ec201c;
+
+$semiBold: Montserrat-SemiBold,Arial,sans-serif;
+$medium:   Montserrat-Medium,Arial,sans-serif;
+$regular:  Montserrat-Regular,Arial,sans-serif;
+
+@mixin mb {
+    @media (max-width: $md2+px) {
+        margin-bottom: 120px;
+    }
+
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 90px;
+    }
+    @media (max-width: $md4+px) {
+        margin-bottom: 60px;
+    }
+}
+
+
+// == plagins =================
+@import "plagins/swiper-bundle";
+// == plagins =================
+
 // == blocks ================
 @import "../common/menu/menu";
+@import "../common/footer/#footer";
 // == // blocks ================
 
 
