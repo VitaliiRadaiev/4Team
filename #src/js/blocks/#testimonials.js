@@ -46,8 +46,8 @@ if (sliders) {
             //},
             // Arrows
             navigation: {
-                nextEl: testimonials.querySelector('.js-slider-testimonials-btn-prev'),
-                prevEl: testimonials.querySelector('.js-slider-testimonials-btn-next'),
+                nextEl: testimonials.querySelector('.js-slider-testimonials-btn-next'),
+                prevEl: testimonials.querySelector('.js-slider-testimonials-btn-prev'),
             },
             /*
             breakpoints: {
