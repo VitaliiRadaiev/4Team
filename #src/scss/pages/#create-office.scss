@@ -1,0 +1,117 @@
+.create-office-page {
+    & .block-detail {
+        padding-bottom: 80px;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 60px;
+        }
+        & .link-back {
+            margin-bottom: 53px;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        & .block-detail__decor_1 {
+            left: 0;
+            right: auto;
+            transform: translate(-50%, -40%);
+        }
+
+        & .block-detail__top {
+            margin-bottom: 0;
+        }
+
+        & .block-detail__top-column-1 {
+            flex: 0 0 36.4%;
+        }
+
+        & .block-detail__top-column-2 {
+            max-width: 833px;
+            padding-top: 0;
+            &.text-content p {
+                margin-bottom: 1.3em;
+            }
+        }
+    }
+}
+
+
+
+.offer-block {
+    margin-bottom: 119px;
+    @include mb();
+
+    & .container {
+        position: relative;
+    }
+
+    &__decor-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        & img {
+            max-width: 100%;
+            transform: translateX(60%);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 81px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & > li {
+            flex: 0 1 33.3333%;
+            padding: 0 15px;
+            text-align: center;
+            margin-bottom: 98px;
+
+            @media (max-width: 1267px) {
+                flex: 0 1 50%;
+            }
+
+            @media (max-width: 575px) {
+                flex: 0 1 100%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    &__card {
+    }
+
+    &__img {
+        height: 86px;
+        text-align: center;
+        margin-bottom: 12px;
+        & img {
+            height: 100%;
+        }
+    }
+
+    &__card-title {
+        max-width: 454px;
+        margin: 0 auto 22px;
+    }
+
+    &__text {
+        max-width: 495px;
+        margin: 0 auto;
+    }
+
+    &__btn-wrap {
+        text-align: center;
+    }
+}

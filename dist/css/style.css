@@ -84,6 +84,15 @@ body.lock {
   line-height: 1.333em;
 }
 
+.title-5 {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.21em;
+  color: #000000;
+}
+
 .text-content {
   color: #000000;
   font-family: Montserrat-Regular, Arial, sans-serif;
@@ -1867,6 +1876,81 @@ textarea.form__input {
   top: 53%;
 }
 
+.red-block {
+  position: relative;
+  padding-top: 169px;
+  padding-bottom: 114px;
+  margin-bottom: 176px;
+}
+
+.red-block__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.red-block__bg-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.red-block__title {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto 88px;
+  color: #fff;
+}
+
+.red-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.red-block__list > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+.red-block__num {
+  color: #FFC800;
+  text-align: center;
+  font-size: 80px;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.red-block__card-title {
+  max-width: 454px;
+  margin: 0 auto 29px;
+  color: #fff;
+}
+
+.red-block__text {
+  color: #fff;
+  max-width: 495px;
+  margin: 0 auto;
+}
+
 .hero__bottom-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2698,6 +2782,112 @@ textarea.form__input {
   padding-top: 0;
 }
 
+.create-office-page .block-detail {
+  padding-bottom: 80px;
+}
+
+.create-office-page .block-detail .link-back {
+  margin-bottom: 53px;
+}
+
+.create-office-page .block-detail .block-detail__decor_1 {
+  left: 0;
+  right: auto;
+  -webkit-transform: translate(-50%, -40%);
+      -ms-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+}
+
+.create-office-page .block-detail .block-detail__top {
+  margin-bottom: 0;
+}
+
+.create-office-page .block-detail .block-detail__top-column-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36.4%;
+          flex: 0 0 36.4%;
+}
+
+.create-office-page .block-detail .block-detail__top-column-2 {
+  max-width: 833px;
+  padding-top: 0;
+}
+
+.create-office-page .block-detail .block-detail__top-column-2.text-content p {
+  margin-bottom: 1.3em;
+}
+
+.offer-block {
+  margin-bottom: 119px;
+}
+
+.offer-block .container {
+  position: relative;
+}
+
+.offer-block__decor-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.offer-block__decor-img img {
+  max-width: 100%;
+  -webkit-transform: translateX(60%);
+      -ms-transform: translateX(60%);
+          transform: translateX(60%);
+}
+
+.offer-block__title {
+  text-align: center;
+  margin-bottom: 81px;
+}
+
+.offer-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer-block__list > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+  padding: 0 15px;
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+.offer-block__img {
+  height: 86px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.offer-block__img img {
+  height: 100%;
+}
+
+.offer-block__card-title {
+  max-width: 454px;
+  margin: 0 auto 22px;
+}
+
+.offer-block__text {
+  max-width: 495px;
+  margin: 0 auto;
+}
+
+.offer-block__btn-wrap {
+  text-align: center;
+}
+
 @media (min-width: 992px) {
   .btn-border-red:hover {
     color: #fff;
@@ -2880,6 +3070,12 @@ textarea.form__input {
     margin: 0 auto;
   }
 
+  .red-block__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
   .careers-detail-page__column-1 {
     margin-right: 30px;
   }
@@ -2918,6 +3114,12 @@ textarea.form__input {
 
   .progress-block_vertical .progress-block__text {
     margin: 0 auto;
+  }
+
+  .offer-block__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
@@ -3052,6 +3254,10 @@ textarea.form__input {
     margin-left: 0px;
   }
 
+  .red-block {
+    margin-bottom: 120px;
+  }
+
   .team {
     margin-bottom: 120px;
   }
@@ -3160,6 +3366,10 @@ textarea.form__input {
   .progress-block__item:not(:last-child) {
     margin-bottom: 50px;
   }
+
+  .offer-block {
+    margin-bottom: 120px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -3173,6 +3383,14 @@ textarea.form__input {
 
   .title-2 {
     font-size: 35px;
+  }
+
+  .title-5 {
+    font-size: 24px;
+  }
+
+  .title-5 {
+    font-size: 18px;
   }
 
   .text-content {
@@ -3252,6 +3470,19 @@ textarea.form__input {
 
   .additional-info-block__label_2 {
     left: 0;
+  }
+
+  .red-block {
+    margin-bottom: 90px;
+  }
+
+  .red-block {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .red-block__title {
+    margin-bottom: 40px;
   }
 
   .hero__bottom-btn_left {
@@ -3379,6 +3610,22 @@ textarea.form__input {
   .diagnostics-page .block-detail .block-detail__top-column-1 .block-detail__title {
     font-size: 38px;
   }
+
+  .create-office-page .block-detail {
+    padding-bottom: 60px;
+  }
+
+  .create-office-page .block-detail .link-back {
+    margin-bottom: 30px;
+  }
+
+  .offer-block {
+    margin-bottom: 90px;
+  }
+
+  .offer-block__title {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 599px) {
@@ -3392,6 +3639,22 @@ textarea.form__input {
 
   .btn-border {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .red-block__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 50px;
+  }
+
+  .offer-block__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 50px;
   }
 }
 
@@ -3492,6 +3755,15 @@ textarea.form__input {
     font-size: 7px;
   }
 
+  .red-block {
+    margin-bottom: 60px;
+  }
+
+  .red-block {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
   .team {
     margin-bottom: 60px;
   }
@@ -3572,6 +3844,10 @@ textarea.form__input {
 
   .diagnostics-page .block-detail .block-detail__top-column-1 .block-detail__title {
     font-size: 29px;
+  }
+
+  .offer-block {
+    margin-bottom: 60px;
   }
 }
 

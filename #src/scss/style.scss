@@ -204,6 +204,23 @@ body {
     }
 }
 
+.title-5 {
+    font-family: $bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.21em;
+    color: #000000;
+
+    @media (max-width: $md3+px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: $md3+px) {
+        font-size: 18px;
+    }
+}
+
 .text-content {
         color: #000000;
         font-family: $regular;
@@ -342,6 +359,7 @@ body {
 @import "../common/block-detail/block-detail";
 @import "../common/questions-block/questions-block";
 @import "../common/additional-info-block/additional-info-block";
+@import "../common/red-block/red-block";
 // == // blocks ================
 
 
@@ -352,4 +370,5 @@ body {
 @import "pages/#about";
 @import "pages/#recruitment";
 @import "pages/#diagnostics";
+@import "pages/#create-office";
 // == // pages ======================
