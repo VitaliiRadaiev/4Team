@@ -1,0 +1,126 @@
+.additional-info-block {
+    margin-bottom: 71px;
+    &__body {
+        display: flex;
+
+        @media (max-width: 1267px) {
+            display: block;
+        }
+    }
+
+    &__column-1 {
+        flex: 0 0 47%;
+        padding-right: 40px;
+    
+        @media (min-width: 1268px) {
+            min-width: 620px;
+        }
+        @media (max-width: 1267px) {
+            padding-left: 144px;
+
+            & .additional-info-block__title {
+                margin-left: -144px;
+            }
+        }
+
+        @media (max-width: $md2+px) {
+            padding-left: 0px;
+
+            & .additional-info-block__title {
+                margin-left: 0px;
+            }
+        }
+
+        & .list-dots-img  {
+            margin-left: 10px;
+        }
+    }
+
+    &__column-2 {
+        flex: 1 1 auto;
+    }
+
+    &__title {
+        margin-bottom: 85px;
+
+        @media (max-width: 1267px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__img-wrap {
+        position: relative;
+        transform: translateY(-47px);
+        max-width: 735px;
+
+        @media (max-width: 1267px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        
+        
+
+        & .advantage__image-bg {
+            top: 16%;
+            left: 5%;
+            width: 100%;
+        }
+    }
+
+    &__label {
+        font-size: 10px;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.207741);
+        border-radius: 14.4px;
+        min-height: 8.2em;
+        min-width: 36.6em;
+        padding: 1.2em 2em 1.2em 3.2em;
+        display: inline-flex;
+        align-items: center;
+
+        @media (max-width: $md4+px) {
+            font-size: 7px;
+        }
+
+        & > strong {
+            font-family: $bold;
+            font-weight: bold;
+            font-size: 4.6em;
+            line-height: 1.24em;
+            color: #000000;
+            margin-right: 0.71em;
+        }
+
+        & > span {
+            font-family: $bold;
+            font-weight: bold;
+            font-size: 1.9em;
+            line-height: 1.21em;
+        }
+        &_1 {
+            right: 61px;
+            top: 16.5%;
+
+            @media (max-width: $md3+px) {
+                right: 0;
+            }
+        }
+
+        &_2 {
+            left: 93px;
+            top: 53%;
+
+            @media (max-width: $md3+px) {
+                left: 0;
+            }
+        }
+    }
+}
+

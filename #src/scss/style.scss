@@ -1,8 +1,19 @@
+@font-face {
+    font-family: "Montserrat-Bold";
+    font-display: swap;
+    src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
 $decorColor: #ec201c;
+
 
 $semiBold: Montserrat-SemiBold,Arial,sans-serif;
 $bold: Montserrat-Bold,Arial,sans-serif;
@@ -172,6 +183,27 @@ body {
     }
 }
 
+
+.title-2 {
+    color: #000000;
+    font-family: $medium;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.333em;
+
+
+    @media (max-width: $md2+px) {
+        font-size: 50px;
+    }
+    @media (max-width: $md3+px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: $md4+px) {
+        font-size: 28px;
+    }
+}
+
 .text-content {
         color: #000000;
         font-family: $regular;
@@ -238,6 +270,64 @@ body {
 }
 
 
+
+.list-dots-img {
+    margin-bottom: 95px;
+
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 60px;
+    }
+
+    &.list-dots-img_mini {
+        & > li {
+            margin-bottom: 1em;
+            & img {
+                width: 19px;
+                margin-right: 16px;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    & > li {
+        display: flex;
+        margin-bottom: 1.9em;
+        & img {
+            width: 40px;
+            height: auto;
+            margin-right: 16px;
+            align-self: flex-start;
+        }
+    }
+    &__text {
+    }
+}
+
+
+.list-dots-red {
+    margin-bottom: 65px;
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 40px;
+    }
+    & > li {
+        display: flex;
+        margin-bottom: 1em;
+        
+        &:before {
+            content: '';
+            display: block;
+            flex: 0 0 10px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $decorColor;
+            margin-right: 18px;
+            margin-top: 11px;
+        }
+    }
+}
 // == plagins =================
 @import "plagins/swiper-bundle";
 // == plagins =================
@@ -251,6 +341,7 @@ body {
 @import "../common/popup/popup";
 @import "../common/block-detail/block-detail";
 @import "../common/questions-block/questions-block";
+@import "../common/additional-info-block/additional-info-block";
 // == // blocks ================
 
 
@@ -260,4 +351,5 @@ body {
 @import "pages/#careers-detail";
 @import "pages/#about";
 @import "pages/#recruitment";
+@import "pages/#diagnostics";
 // == // pages ======================

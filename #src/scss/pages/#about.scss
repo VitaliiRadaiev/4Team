@@ -86,7 +86,7 @@
         @media (max-width: 1267px) {
             display: flex;
             flex-wrap: wrap;
-
+            justify-content: space-around;
             & .progress-block__img {
                 flex: 0 1 100%;
 
@@ -219,7 +219,7 @@
         font-weight: 700;
         line-height: 1.142em;
         margin-bottom: 10px;
-
+        white-space: nowrap;
         @media (max-width: $md4+px) {
             font-size: 50px;
         }

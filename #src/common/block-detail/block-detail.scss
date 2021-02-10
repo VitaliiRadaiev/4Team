@@ -156,23 +156,3 @@
 
 
 
-.list-dots-img {
-    margin-bottom: 95px;
-
-    @media (max-width: $md3+px) {
-        margin-bottom: 60px;
-    }
-    & > li {
-        display: flex;
-        margin-bottom: 1.9em;
-        & img {
-            width: 40px;
-            height: auto;
-            margin-right: 16px;
-            align-self: flex-start;
-        }
-    }
-    &__text {
-    }
-}
-
