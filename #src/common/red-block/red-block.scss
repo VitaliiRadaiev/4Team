@@ -92,4 +92,13 @@
         max-width: 495px;
         margin: 0 auto;
     }
+
+    &__btn-wrap {
+        text-align: center;
+        margin-top: -40px;
+
+        @media (max-width: 575px) {
+            margin-top: 0;
+        }
+    }
 }

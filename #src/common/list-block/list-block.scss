@@ -1,0 +1,26 @@
+.list-block {
+    margin-bottom: 60px;
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (max-width: $md3+px) {
+            display: block;
+        }
+
+        & > ul {
+            flex: 0 1 calc(50% - 20px);
+        }
+
+    }
+}

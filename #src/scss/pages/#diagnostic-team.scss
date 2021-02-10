@@ -1,0 +1,38 @@
+.diagnostic-team-page {
+    & .block-detail {
+        padding-bottom: 80px;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 60px;
+        }
+        & .link-back {
+            margin-bottom: 53px;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        & .block-detail__decor_1 {
+            left: 0;
+            right: auto;
+            transform: translate(-50%, -40%);
+        }
+
+        & .block-detail__top {
+            margin-bottom: 0;
+        }
+
+        & .block-detail__top-column-1 {
+            flex: 0 0 36.4%;
+        }
+
+        & .block-detail__top-column-2 {
+            max-width: 833px;
+            padding-top: 0;
+            &.text-content p {
+                margin-bottom: 1.3em;
+            }
+        }
+    }
+}

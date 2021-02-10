@@ -1951,6 +1951,36 @@ textarea.form__input {
   margin: 0 auto;
 }
 
+.red-block__btn-wrap {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.list-block {
+  margin-bottom: 60px;
+}
+
+.list-block__title {
+  margin-bottom: 40px;
+}
+
+.list-block__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list-block__body > ul {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 20px);
+          flex: 0 1 calc(50% - 20px);
+}
+
 .hero__bottom-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2888,6 +2918,41 @@ textarea.form__input {
   text-align: center;
 }
 
+.diagnostic-team-page .block-detail {
+  padding-bottom: 80px;
+}
+
+.diagnostic-team-page .block-detail .link-back {
+  margin-bottom: 53px;
+}
+
+.diagnostic-team-page .block-detail .block-detail__decor_1 {
+  left: 0;
+  right: auto;
+  -webkit-transform: translate(-50%, -40%);
+      -ms-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+}
+
+.diagnostic-team-page .block-detail .block-detail__top {
+  margin-bottom: 0;
+}
+
+.diagnostic-team-page .block-detail .block-detail__top-column-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36.4%;
+          flex: 0 0 36.4%;
+}
+
+.diagnostic-team-page .block-detail .block-detail__top-column-2 {
+  max-width: 833px;
+  padding-top: 0;
+}
+
+.diagnostic-team-page .block-detail .block-detail__top-column-2.text-content p {
+  margin-bottom: 1.3em;
+}
+
 @media (min-width: 992px) {
   .btn-border-red:hover {
     color: #fff;
@@ -3485,6 +3550,14 @@ textarea.form__input {
     margin-bottom: 40px;
   }
 
+  .list-block {
+    margin-bottom: 0;
+  }
+
+  .list-block__body {
+    display: block;
+  }
+
   .hero__bottom-btn_left {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -3626,6 +3699,14 @@ textarea.form__input {
   .offer-block__title {
     margin-bottom: 40px;
   }
+
+  .diagnostic-team-page .block-detail {
+    padding-bottom: 60px;
+  }
+
+  .diagnostic-team-page .block-detail .link-back {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 599px) {
@@ -3648,6 +3729,10 @@ textarea.form__input {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin-bottom: 50px;
+  }
+
+  .red-block__btn-wrap {
+    margin-top: 0;
   }
 
   .offer-block__list > li {
