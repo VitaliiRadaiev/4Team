@@ -5,8 +5,15 @@ $md4: 479.98;
 $decorColor: #ec201c;
 
 $semiBold: Montserrat-SemiBold,Arial,sans-serif;
+$bold: Montserrat-Bold,Arial,sans-serif;
 $medium:   Montserrat-Medium,Arial,sans-serif;
 $regular:  Montserrat-Regular,Arial,sans-serif;
+
+body {
+    &.lock {
+        overflow: hidden;
+    }
+}
 
 @mixin mb {
     @media (max-width: $md2+px) {
@@ -22,6 +29,214 @@ $regular:  Montserrat-Regular,Arial,sans-serif;
     }
 }
 
+@mixin pd {
+    @media (max-width: $md2+px) {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: $md3+px) {
+        padding-top: 150px;
+        padding-bottom: 60px;
+    }
+}
+
+.container {
+
+
+    @media (min-width: 1921px) {
+        width: 1760px;
+        padding: 0 40px;
+    }
+
+    @media (max-width: 1439px) {
+        padding: 0 2.08333vw;
+    }
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    @media (max-width: $md3+px) {
+        padding: 0 16px;
+    }
+
+}
+
+.container-sm {
+    max-width: 1572px;
+}
+
+
+.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-height: 1em !important;
+    max-width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.btn-border-red {
+    display: inline-block;
+    font-family: Montserrat-SemiBold,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 7px 60px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 0;
+    line-height: 2;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-color: transparent;
+    border: 3px solid $decorColor;
+    color: $decorColor;
+
+    @media only screen and (max-width: 1023px) {
+            font-size: 18px;
+            padding: 6px 50px;
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            color: #fff;
+            background-color: $decorColor;
+        }
+    }
+
+
+
+}
+
+.btn-sm {
+    &.widly {
+        min-width:15.8em; 
+        text-align: center
+    }
+}
+
+
+.link-back {
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+
+
+    @media (min-width: 992px) {
+        &:hover {
+            & .icon {
+                fill: $decorColor;
+            }
+        }
+    }
+    & .icon {
+        width: 45px;
+        height: 40px;
+        fill: #000;
+    }
+}
+
+
+
+.title {
+
+    &_h2 {
+        @media (max-width: $md4+px) {
+            font-size: 30px;
+        }
+    }
+
+    &_h6 {
+        color: #000000;
+        font-family: $semiBold;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.666em;
+
+        @media (max-width: $md3+px) {
+            font-size: 20px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.text-content {
+        color: #000000;
+        font-family: $regular;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6em;
+
+        @media (max-width: $md3+px) {
+            font-size: 18px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 16px;
+        }
+
+        &_big {
+            font-family: $medium;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1.5em;
+            @media (max-width: $md3+px) {
+                font-size: 22px;
+            }
+            @media (max-width: $md4+px) {
+                font-size: 18px;
+            }
+        }
+
+    & h6 {
+        color: #000000;
+        font-family: $semiBold;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.666em;
+        margin-bottom: 1.25em;
+
+        @media (max-width: $md3+px) {
+            font-size: 20px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 18px;
+        }
+    }
+
+    & ul {
+        margin-bottom: 2.7em;
+        & > li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 0.94em;
+
+            &:before {
+                position: absolute;
+                content: '•';
+                top: 0px;
+                left: 9px;
+                font-size: inherit;
+            }
+        }
+    }
+
+    & p {
+        margin-bottom: 0.8em;
+    }
+}
+
 
 // == plagins =================
 @import "plagins/swiper-bundle";
@@ -29,10 +244,20 @@ $regular:  Montserrat-Regular,Arial,sans-serif;
 
 // == blocks ================
 @import "../common/menu/menu";
+@import "../common/header/#header";
 @import "../common/footer/#footer";
+@import "../common/pagination/pagging";
+@import "../common/diagnostic-block/diagnostic-block";
+@import "../common/popup/popup";
+@import "../common/block-detail/block-detail";
+@import "../common/questions-block/questions-block";
 // == // blocks ================
 
 
 // == pages ======================
-@import "pages/#home.scss";
+@import "pages/#home";
+@import "pages/#careers";
+@import "pages/#careers-detail";
+@import "pages/#about";
+@import "pages/#recruitment";
 // == // pages ======================

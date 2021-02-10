@@ -1,0 +1,262 @@
+.careers-page {
+    
+}
+
+
+
+.careers {
+    background-color: #f7f5f2;
+    padding-top: 308px;
+    padding-bottom: 70px;
+
+    @media (max-width: $md2+px) {
+        padding-top: 200px;
+    }
+    @media (max-width: $md3+px) {
+        padding-bottom: 50px;
+        padding-top: 120px;
+    }
+
+
+    & .container {
+        max-width: 1572px;
+    }
+
+    & .title {
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin: 0 auto 106px;
+        max-width: 816px;;
+        font-family: $medium;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.78em;
+
+        @media (max-width: $md2+px) {
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+        @media (max-width: $md3+px) {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__filter {
+        display: flex;
+        margin-bottom: 41px;
+
+        @media (max-width: $md2+px) {
+            margin-bottom: 25px;
+        }
+        @media (max-width: $md4+px) {
+            margin-bottom: 5px;
+        }
+
+        &:before {
+            content: '';
+            flex: 0 0 30.65%;
+            display: block;
+
+            @media (max-width: $md2+px) {
+                display: none;
+            }
+        }
+    }
+
+    &__filter-inner {
+        flex: 1 1 auto;
+    }
+
+    &__filter-btn {
+        display: inline-flex;
+        min-width: 8.5em;
+        height: 3em;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #ffffff;
+        white-space: nowrap;
+        padding: 0.25em 0.75em;
+        color: #f1302c;
+        font-family: $semiBold;
+        font-size: 20px;
+        font-weight: 600;
+        line-height:1.2em;
+        transition: all .3s ease;
+        text-decoration: none;
+        margin-right: 0.95em;
+        margin-bottom: 0.95em;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: #fff;
+                background-color: $decorColor;
+            }
+        }
+
+        &._active {
+            color: #fff;
+            background-color: $decorColor;
+        }
+    }
+}
+
+
+
+.main-careers {
+    display: flex;
+    
+    @media (max-width: $md2+px) {
+        display: block;
+    }
+
+    &__column-1 {
+        flex: 0 0 30.65%;
+        padding-right: 40px;
+    }
+
+    &__column-2 {
+        flex: 1 1 auto;
+    }
+
+    &__category {
+        & > li {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__category-link {
+        color: #000000;
+        font-family: $medium;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 2.35em;
+        display: inline-block;
+        position: relative;
+        padding-right: 15px;
+        text-decoration: none;
+
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 3px;
+            background-color: $decorColor;
+            transition: all .3s ease;
+        }
+
+        &._active {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        & > li {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            flex: 0 1 50%;
+
+            @media (max-width: $md3+px) {
+                flex: 0 1 100%;
+            }
+        }
+    }
+
+    &__card {
+    }
+}
+
+
+
+
+
+
+.card-careers {
+    display: block;
+    border-radius: 4px;
+    background-color: #ffffff;
+    overflow: hidden;
+    min-height: 140px;
+    position: relative;
+    padding: 35px 49px;
+    transition: all .3s ease;
+    color: #000000;
+    font-family: $semiBold;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3em;
+    text-decoration: none;
+
+    @media (max-width: $md4+px) {
+        font-size: 16px;
+        min-height: 100px;
+        padding: 25px 20px;
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: $decorColor;
+            color: #fff;
+        }
+    }
+
+    &._active {
+        background-color: $decorColor;
+        color: #fff;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 8px;
+        background-color: $decorColor;
+    }
+
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__place {
+    }
+}

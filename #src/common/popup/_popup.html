@@ -1,16 +1,79 @@
-<div class="popup" id="popupSerch">
+<div class="popup" id="popup">
 	<div class="popup_body">
 		<div class="popup_content">
-
+			<div class="popup__close close-popup"><span></span></div>
 			<div class="popup__form-wrap">
-				<form action="/" class="popup-search">
-					<div class="popup-search__item">
-						<input class="popup-search__input" type="text" placeholder="SEARCH HERE…">
+				<form action="#" id="form" class="form__body">
+					<h1 class="form__title title title_h2">Отправда данных</h1>
+					<div class="form__item">
+						<label for="formName" class="form__label">Имя*:</label>
+						<input id="formName" type="text" name="name" class="form__input">
 					</div>
-					<div class="popup-search__item">
-						<button class="popup-search__submit" type="submit"><span>SUBMIT</span></button>
+					<div class="form__item">
+						<label for="lastname" class="form__label">Фамилия*:</label>
+						<input id="lastname" type="text" name="lastname" class="form__input">
 					</div>
+					<div class="form__item">
+						<label for="phone" class="form__label">Телефон*:</label>
+						<input autocomplete="off" id="phone" type="text" name="phone" class="form__input _mask" data-mask="+3(999)999-99-99">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail:</label>
+						<input id="formEmail" type="text" name="email" class="form__input">
+					</div>
+
+					<div class="form__item">
+						<label for="formMessage" class="form__label">Дополнительное сообщение:</label>
+						<textarea name="message" id="formMessage" class="form__input"></textarea>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Прикрепить файл: pdf, docs, doc, jpg, png.</div>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" accept=".pdf, .docs, .doc, .jpeg, .jpg, .png" type="file" name="image" class="file__input">
+								<div class="file__button">Выбрать</div>
+							</div>
+							<div id="formPreview" class="file__preview"></div>
+						</div>
+					</div>
+					<button type="submit" class="btn-sm">Отправить</button>
 				</form>
+
+				<script>
+						//Получаем инпут file в переменную
+						const formImage = document.getElementById('formImage');
+						//Получаем див для превью в переменную
+						const formPreview = document.getElementById('formPreview');
+
+						//Слушаем изменения в инпуте file
+						formImage.addEventListener('change', () => {
+							uploadFile(formImage.files[0]);
+						});
+
+						function uploadFile(file) {
+							// провераяем тип файла
+				
+							// if (!['image/jpeg', 'image/png', 'image/pdf'].includes(file.type)) {
+							// 	alert('Разрешены только указанные форматы.');
+							// 	formImage.value = '';
+							// 	return;
+							// }
+							// проверим размер файла (<2 Мб)
+							if (file.size > 2 * 1024 * 1024) {
+								alert('Файл должен быть менее 2 МБ.');
+								return;
+							}
+
+							var reader = new FileReader();
+							reader.onload = function (e) {
+								formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+							};
+							reader.onerror = function (e) {
+								alert('Ошибка');
+							};
+							reader.readAsDataURL(file);
+						}
+				</script>
 			</div>
 			
 		</div>
