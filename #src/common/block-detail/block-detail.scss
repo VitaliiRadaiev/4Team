@@ -94,6 +94,18 @@
         }
     }
 
+    &__subtitle {
+        font-family: $medium;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.21em;
+        color: #A2A2A2;
+
+        @media (max-width: $md3+px) {
+            font-size: 22px;
+        }
+    }
+
 
     &__main {
         display: flex;

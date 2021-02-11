@@ -1,0 +1,42 @@
+.career-guidance-page {
+    & .block-detail {
+        & .link-back {
+            margin-bottom: 70px;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        & .block-detail__decor_2 {
+            top: 38%;
+        }
+
+        & .block-detail__top-column-1 {
+            flex: 0 0 36.4%;
+            & .block-detail__title {
+                font-size: 45px;
+
+                @media (max-width: $md3+px) {
+                    font-size: 38px;
+                }
+                @media (max-width: $md4+px) {
+                    font-size: 29px;
+                }
+            }
+        }
+
+        & .block-detail__top-column-2 {
+            max-width: 853px;
+
+            &.text-content p {
+                margin-bottom: 1.3em;
+            }
+        }
+
+        & .block-detail__main-column-1 {
+            padding-top: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,115 @@
+.hr-audit-page {
+    & .block-detail {
+        padding-bottom: 80px;
+
+        @media (max-width: $md3+px) {
+            padding-bottom: 60px;
+        }
+
+        & .link-back {
+            margin-bottom: 53px;
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        & .block-detail__decor_1 {
+            left: 0;
+            right: auto;
+            transform: translate(-50%, -40%);
+        }
+
+        & .block-detail__top {
+            margin-bottom: 80px;
+        }
+
+        // & .block-detail__top-column-1 {
+        //     flex: 0 0 36.4%;
+        // }
+
+        // & .block-detail__top-column-2 {
+        //     max-width: 833px;
+        //     padding-top: 0;
+        //     &.text-content p {
+        //         margin-bottom: 1.3em;
+        //     }
+        // }
+    }
+}
+
+
+.hr-audit-info {
+    margin-bottom: 194px;
+    @include mb();
+    
+    & .container {
+        position: relative;        
+    }
+
+
+    &__bg-decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(50%);
+        z-index: -1;
+
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    & .btn-sm {
+        margin-left: 35px;
+    }
+
+    &__title {
+        margin-bottom: 61px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & > li {
+            flex: 0 1 calc(50% - 20px);
+            margin-bottom: 60px;
+            padding-left: 35px;
+
+            @media (max-width: $md3+px) {
+                flex: 0 1 100%;
+            }
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 24px;
+        position: relative;
+        max-width: 638px;
+
+        @media (max-width: $md3+px) {
+            max-width: 450px;
+        }
+    }
+
+    &__item-title-num {
+        position: absolute;
+        top: 0;
+        left: -40px;
+        font-family: $bold;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 1.2em;
+        color: $decorColor;
+        
+    }
+
+    &__text {
+        max-width: 638px;
+    }
+}

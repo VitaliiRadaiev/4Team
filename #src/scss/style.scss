@@ -283,6 +283,11 @@ body {
 
     & p {
         margin-bottom: 0.8em;
+
+        & > strong {
+            font-family: $bold;
+            font-weight: 700;
+        }
     }
 }
 
@@ -373,4 +378,7 @@ body {
 @import "pages/#diagnostics";
 @import "pages/#create-office";
 @import "pages/#diagnostic-team";
+@import "pages/#transformation";
+@import "pages/#hr-audit";
+@import "pages/#career-guidance";
 // == // pages ======================
