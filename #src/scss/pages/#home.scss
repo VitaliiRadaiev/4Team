@@ -42,6 +42,13 @@
         &_left {
             left: -10px;
 
+            @media (max-width: 1920px) {
+                left: -105px;
+            }
+            @media (max-width: 1438px) {
+                left: -10px;
+            }
+
             @media (max-width: $md3+px) {
                 left: 50%;
                 transform: translateX(-50%);
@@ -108,13 +115,20 @@
     font-weight: 600;
     position: relative;
     transition: all .3s ease;
+    height: 3em;
+    letter-spacing: 0.06em;
+
+    & > span {
+        transition: all .4s ease;
+    }
 
     @media (min-width: 992px) {
         &:hover {
-            color: #fff;
+            color: $decorColor;
+            padding-bottom: 15px;
 
-            &:after {
-                transform: scale(1.5);
+            & > span {
+                transform: translateY(-5px);
             }
         }
     }
@@ -133,22 +147,6 @@
         width: 96%;
         height: 3px;
         background-color: $decorColor;
-    }
-
-    &:after {
-        position: absolute;
-        content: '';
-        display: block;
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        background-color: $decorColor;
-        top: 0;
-        left: 0;
-        transition: all .3s ease;
-        transform: scale(0);
-        z-index: -1;
-        transform-origin: right;
     }
 }
 

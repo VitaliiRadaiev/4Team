@@ -2065,6 +2065,14 @@ textarea.form__input {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  height: 3em;
+  letter-spacing: 0.06em;
+}
+
+.btn-cont > span {
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .btn-cont:before {
@@ -2078,28 +2086,6 @@ textarea.form__input {
   width: 96%;
   height: 3px;
   background-color: #ec201c;
-}
-
-.btn-cont:after {
-  position: absolute;
-  content: '';
-  display: block;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-color: #ec201c;
-  top: 0;
-  left: 0;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  z-index: -1;
-  -webkit-transform-origin: right;
-      -ms-transform-origin: right;
-          transform-origin: right;
 }
 
 .about-banner {
@@ -3400,13 +3386,14 @@ textarea.form__input {
   }
 
   .btn-cont:hover {
-    color: #fff;
+    color: #ec201c;
+    padding-bottom: 15px;
   }
 
-  .btn-cont:hover:after {
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-            transform: scale(1.5);
+  .btn-cont:hover > span {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 
   .btn-border:hover {
@@ -3467,6 +3454,12 @@ textarea.form__input {
   }
 }
 
+@media (max-width: 1920px) {
+  .hero__bottom-btn_left {
+    left: -105px;
+  }
+}
+
 @media (max-width: 1599px) {
   .about-page .hero__title .title {
     font-size: 80px;
@@ -3482,6 +3475,12 @@ textarea.form__input {
     top: -100px;
     right: -60px;
     width: 50%;
+  }
+}
+
+@media (max-width: 1438px) {
+  .hero__bottom-btn_left {
+    left: -10px;
   }
 }
 

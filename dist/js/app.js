@@ -9250,3 +9250,17 @@ if (sliders) {
 }
 ;
 
+
+
+{
+    let buttonsContact = document.querySelectorAll('.btn-cont');
+    if(buttonsContact.length) {
+        buttonsContact.forEach(btn => {
+            let text = btn.innerText;
+            btn.innerText = '';
+            btn.insertAdjacentHTML('afterbegin', `<span>${text}</span>`)
+            
+        })
+    }
+}
+

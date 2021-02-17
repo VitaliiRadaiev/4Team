@@ -7,3 +7,17 @@
 @@include('blocks/#testimonials.js');
 @@include('pages/#about.js');
 
+
+
+{
+    let buttonsContact = document.querySelectorAll('.btn-cont');
+    if(buttonsContact.length) {
+        buttonsContact.forEach(btn => {
+            let text = btn.innerText;
+            btn.innerText = '';
+            btn.insertAdjacentHTML('afterbegin', `<span>${text}</span>`)
+            
+        })
+    }
+}
+
