@@ -3480,7 +3480,7 @@ textarea.form__input {
 
 @media (max-width: 1438px) {
   .hero__bottom-btn_left {
-    left: -10px;
+    left: 0px;
   }
 }
 
