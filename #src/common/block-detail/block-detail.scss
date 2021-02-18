@@ -51,7 +51,7 @@
 
         @media (max-width: $md2+px) {
             display: block;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
     }
     
@@ -136,7 +136,7 @@
         }
 
         @media (max-width: $md4+px) {
-            padding-top: 30px;
+            padding-top: 60px;
             margin-bottom: 0;
         }
     }
@@ -162,6 +162,12 @@
            & .block-detail__title {
             margin-left: 0;
             }
+        }
+    }
+
+    &__text-wrap {
+        & .list-dots-img {
+            max-width: 698px;
         }
     }
 }

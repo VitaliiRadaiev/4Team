@@ -1,15 +1,13 @@
 .careers-detail-page {
+    @include pt();
     &__content {
-        padding-top: 269px;
         padding-bottom: 129px;
 
         @media (max-width: $md2+px) {
-            padding-top: 200px;
             padding-bottom: 100px;
         }
     
         @media (max-width: $md3+px) {
-            padding-top: 120px;
             padding-bottom: 0
         }
 

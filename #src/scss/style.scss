@@ -55,7 +55,7 @@ body {
 @mixin pt {
     padding-top: 180px;
 
-    @media (max-width: $md2+px) {
+    @media (max-width: 1438px) {
         padding-top: 120px;
     }
 }
@@ -244,8 +244,8 @@ body {
         }
 
         &_big {
-            font-family: $medium;
-            font-weight: 500;
+            font-family: $regular;
+            font-weight: 400;
             font-size: 28px;
             line-height: 1.5em;
             @media (max-width: $md3+px) {
@@ -312,7 +312,7 @@ body {
     &.list-dots-img_mini {
         & > li {
             margin-bottom: 1em;
-            & img {
+            & img, {
                 width: 19px;
                 margin-right: 16px;
                 margin-top: 4px;
@@ -323,7 +323,7 @@ body {
     & > li {
         display: flex;
         margin-bottom: 1.9em;
-        & img {
+        & img, & > span {
             width: 40px;
             height: auto;
             margin-right: 16px;

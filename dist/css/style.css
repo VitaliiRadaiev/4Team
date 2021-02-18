@@ -102,8 +102,8 @@ body.lock {
 }
 
 .text-content_big {
-  font-family: Montserrat-Medium, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-weight: 400;
   font-size: 28px;
   line-height: 1.5em;
 }
@@ -165,7 +165,8 @@ body.lock {
   margin-bottom: 1.9em;
 }
 
-.list-dots-img > li img {
+.list-dots-img > li img,
+.list-dots-img > li > span {
   width: 40px;
   height: auto;
   margin-right: 16px;
@@ -1695,6 +1696,10 @@ textarea.form__input {
   margin-bottom: 59px;
 }
 
+.block-detail__text-wrap .list-dots-img {
+  max-width: 698px;
+}
+
 .questions-block {
   padding: 201px 0 356px;
   background: #F7F5F2;
@@ -2230,10 +2235,6 @@ textarea.form__input {
 
 .slider-testimonials__text {
   max-width: 1155px;
-  font-family: Montserrat-Regular, Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.4em;
   margin: 0 auto 99px;
   padding: 0 15px;
 }
@@ -2532,8 +2533,11 @@ textarea.form__input {
   margin-bottom: 8px;
 }
 
+.careers-detail-page {
+  padding-top: 180px;
+}
+
 .careers-detail-page__content {
-  padding-top: 269px;
   padding-bottom: 129px;
 }
 
@@ -2646,7 +2650,9 @@ textarea.form__input {
 .about-page .hero__title .title {
   font-size: 100px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: Montserrat-SemiBold, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
 }
 
 .about-banner {
@@ -2661,11 +2667,16 @@ textarea.form__input {
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 31px;
+     -moz-column-gap: 31px;
+          column-gap: 31px;
   text-align: left;
-  margin-bottom: 120px;
+  max-width: 1400px;
+  margin: 0 auto 120px;
+}
+
+.about-banner__text .emoji {
+  font-size: 46px;
 }
 
 .progress-block {
@@ -2776,8 +2787,34 @@ textarea.form__input {
   margin: 0 auto;
   color: #000000;
   font-family: Montserrat-Regular, Arial, sans-serif;
-  font-size: 28px;
   font-weight: 400;
+  font-size: 28px;
+  line-height: 1.5em;
+}
+
+.textAnimation .typed-strings {
+  position: relative;
+}
+
+.textAnimation .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+.textAnimation .line1 {
+  top: 0;
+  left: 0;
+}
+
+.textAnimation .letter {
+  display: inline-block;
   line-height: 1em;
 }
 
@@ -3490,6 +3527,18 @@ textarea.form__input {
   .hero__bottom-btn_left {
     left: 0px;
   }
+
+  .careers {
+    padding-top: 120px;
+  }
+
+  .careers-detail-page {
+    padding-top: 120px;
+  }
+
+  .clients-page {
+    padding-top: 120px;
+  }
 }
 
 @media (max-width: 1426px) {
@@ -3777,7 +3826,7 @@ textarea.form__input {
 
   .block-detail__top {
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .block-detail__top-column-1 {
@@ -3854,10 +3903,6 @@ textarea.form__input {
             transform: translate(0%, -50%);
   }
 
-  .slider-testimonials__text {
-    font-size: 24px;
-  }
-
   .partners {
     margin-bottom: 120px;
   }
@@ -3873,10 +3918,6 @@ textarea.form__input {
 
   .partners__list-item {
     padding: 15px 30px;
-  }
-
-  .careers {
-    padding-top: 120px;
   }
 
   .careers__subtitle {
@@ -3921,7 +3962,6 @@ textarea.form__input {
   }
 
   .careers-detail-page__content {
-    padding-top: 200px;
     padding-bottom: 100px;
   }
 
@@ -3967,10 +4007,6 @@ textarea.form__input {
 
   .hr-audit-info {
     margin-bottom: 120px;
-  }
-
-  .clients-page {
-    padding-top: 120px;
   }
 }
 
@@ -4132,10 +4168,6 @@ textarea.form__input {
     margin-bottom: 20px;
   }
 
-  .slider-testimonials__text {
-    font-size: 20px;
-  }
-
   .partners {
     margin-bottom: 90px;
   }
@@ -4178,7 +4210,6 @@ textarea.form__input {
   }
 
   .careers-detail-page__content {
-    padding-top: 120px;
     padding-bottom: 0;
   }
 
@@ -4219,6 +4250,10 @@ textarea.form__input {
     -webkit-transform: translate(55%, -90%);
         -ms-transform: translate(55%, -90%);
             transform: translate(55%, -90%);
+  }
+
+  .progress-block__text {
+    font-size: 22px;
   }
 
   .diagnostics-page .block-detail .link-back {
@@ -4418,7 +4453,7 @@ textarea.form__input {
   }
 
   .block-detail__main-column-1 {
-    padding-top: 30px;
+    padding-top: 60px;
     margin-bottom: 0;
   }
 
@@ -4534,7 +4569,7 @@ textarea.form__input {
   }
 
   .progress-block__text {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .diagnostics-page .block-detail .block-detail__top-column-1 .block-detail__title {
