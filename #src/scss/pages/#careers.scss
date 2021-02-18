@@ -1,20 +1,17 @@
 .careers-page {
-    
+   
 }
 
 
 
 .careers {
     background-color: #f7f5f2;
-    padding-top: 308px;
     padding-bottom: 70px;
 
-    @media (max-width: $md2+px) {
-        padding-top: 200px;
-    }
+    @include pt();
+
     @media (max-width: $md3+px) {
         padding-bottom: 50px;
-        padding-top: 120px;
     }
 
 
@@ -58,7 +55,7 @@
             margin-bottom: 25px;
         }
         @media (max-width: $md4+px) {
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
         &:before {
@@ -74,6 +71,11 @@
 
     &__filter-inner {
         flex: 1 1 auto;
+
+        @media (max-width: $md2+px) {
+            display: flex;
+            overflow: auto;
+        }
     }
 
     &__filter-btn {
@@ -129,6 +131,10 @@
     &__column-1 {
         flex: 0 0 30.65%;
         padding-right: 40px;
+
+        @media (max-width: $md2+px) {
+            padding-right: 0;
+        }
     }
 
     &__column-2 {
@@ -136,8 +142,20 @@
     }
 
     &__category {
+        @media (max-width: $md2+px) {
+            display: flex;
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+
+
         & > li {
             margin-bottom: 24px;
+
+            @media (max-width: $md2+px) {
+                margin-right: 10px;
+                margin-bottom: 4px;
+            }
         }
     }
 
@@ -151,7 +169,7 @@
         position: relative;
         padding-right: 15px;
         text-decoration: none;
-
+        white-space: nowrap;
         @media (max-width: $md3+px) {
             font-size: 16px;
         }

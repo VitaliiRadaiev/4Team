@@ -52,6 +52,14 @@ body {
     }
 }
 
+@mixin pt {
+    padding-top: 180px;
+
+    @media (max-width: $md2+px) {
+        padding-top: 120px;
+    }
+}
+
 .container {
 
 
@@ -381,4 +389,5 @@ body {
 @import "pages/#transformation";
 @import "pages/#hr-audit";
 @import "pages/#career-guidance";
+@import "pages/#clients";
 // == // pages ======================

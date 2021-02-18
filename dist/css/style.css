@@ -1137,11 +1137,11 @@ button.swiper-pagination-bullet {
 
 .diagnostic-block__img {
   position: absolute;
-  top: -217px;
-  right: -142px;
+  top: -152px;
+  right: -11px;
   width: 85%;
   height: 100%;
-  max-width: 850px;
+  max-width: 680px;
 }
 
 .diagnostic-block__img img {
@@ -2291,6 +2291,9 @@ textarea.form__input {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .partners__list > li {
@@ -2311,7 +2314,7 @@ textarea.form__input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 30px;
+  padding: 15px 60px;
   background-color: rgba(247, 245, 242, 0.5);
   min-height: 240px;
   -webkit-transition: all .2s ease;
@@ -2343,8 +2346,8 @@ textarea.form__input {
 
 .careers {
   background-color: #f7f5f2;
-  padding-top: 308px;
   padding-bottom: 70px;
+  padding-top: 180px;
 }
 
 .careers .container {
@@ -2454,6 +2457,7 @@ textarea.form__input {
   position: relative;
   padding-right: 15px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .main-careers__category-link:before {
@@ -3325,6 +3329,10 @@ textarea.form__input {
   padding-top: 20px;
 }
 
+.clients-page {
+  padding-top: 180px;
+}
+
 @media (min-width: 992px) {
   .btn-border-red:hover {
     color: #fff;
@@ -3721,7 +3729,7 @@ textarea.form__input {
     width: 100%;
     text-align: center;
     position: relative;
-    top: 0;
+    margin: 0 auto;
     right: 0;
   }
 
@@ -3730,14 +3738,19 @@ textarea.form__input {
     margin: 0 auto;
   }
 
+  .diagnostic-block__img img.advantage__image-bg {
+    top: -6%;
+  }
+
   .diagnostic-block__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 
   .diagnostic-block__text-wrap {
@@ -3858,8 +3871,12 @@ textarea.form__input {
     margin-bottom: 15px;
   }
 
+  .partners__list-item {
+    padding: 15px 30px;
+  }
+
   .careers {
-    padding-top: 200px;
+    padding-top: 120px;
   }
 
   .careers__subtitle {
@@ -3875,8 +3892,32 @@ textarea.form__input {
     display: none;
   }
 
+  .careers__filter-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+  }
+
   .main-careers {
     display: block;
+  }
+
+  .main-careers__column-1 {
+    padding-right: 0;
+  }
+
+  .main-careers__category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-careers__category > li {
+    margin-right: 10px;
+    margin-bottom: 4px;
   }
 
   .careers-detail-page__content {
@@ -3927,6 +3968,10 @@ textarea.form__input {
   .hr-audit-info {
     margin-bottom: 120px;
   }
+
+  .clients-page {
+    padding-top: 120px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -3976,6 +4021,11 @@ textarea.form__input {
 
   .submenu__link {
     font-size: 18px;
+  }
+
+  .diagnostic-block__img {
+    width: 70%;
+    top: -30px;
   }
 
   .diagnostic-block__text {
@@ -4102,7 +4152,6 @@ textarea.form__input {
 
   .careers {
     padding-bottom: 50px;
-    padding-top: 120px;
   }
 
   .careers .title {
@@ -4279,9 +4328,30 @@ textarea.form__input {
   .btn-border {
     font-size: 20px;
   }
+
+  .contacts-section {
+    padding-top: 150px;
+  }
 }
 
 @media (max-width: 575px) {
+  .btn-block-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .btn-block-wrap .btn-sm {
+    margin-right: 0;
+  }
+
   .red-block__list > li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -4334,26 +4404,8 @@ textarea.form__input {
     font-size: 14px;
   }
 
-  .pagging {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .pagging__arrow {
-    margin: 0 20px;
-  }
-
   .pagging__list {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 10px;
+    margin: 0 15px;
   }
 
   .diagnostic-block__text {
@@ -4429,7 +4481,7 @@ textarea.form__input {
   }
 
   .careers__filter {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .careers__filter-btn {
@@ -4513,5 +4565,29 @@ textarea.form__input {
 @media (max-width: 400px) {
   .hero__inner {
     padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 374px) {
+  .pagging {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .pagging__arrow {
+    margin: 0 20px;
+  }
+
+  .pagging__list {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
   }
 }

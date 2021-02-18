@@ -10,11 +10,11 @@
 
     &__img {
         position: absolute;
-        top: -217px;
-        right: -142px;
+        top: -152px;
+        right: -11px;
         width: 85%;
         height: 100%;
-        max-width: 850px;
+        max-width: 680px;
 
         @media (max-width: 1439px) {
             top: -100px;
@@ -27,14 +27,18 @@
             width: 100%;
             text-align: center;
             position: relative;
-            top: 0;
+            margin: 0 auto;
             right: 0;
-
             & img {
                 max-width: 600px;
                 margin: 0 auto;
 
             }
+        }
+
+        @media (max-width: $md3+px) {
+            width: 70%;
+            top: -30px;
         }
 
         & img {
@@ -46,6 +50,10 @@
                 transform: translateX(-50%);
                 width: 110%;
                 max-width: none;
+
+                @media (max-width: $md2+px) {
+                    top: -6%;
+                }
             }
         }
     }
@@ -56,7 +64,8 @@
 
         @media (max-width: $md2+px) {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
+            text-align: center;
         }
         
         &.container {
@@ -104,9 +113,19 @@
 
 
 .btn-block-wrap {
+    @media (max-width: 575px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     & .btn-sm {
         margin-right: 16px;
         margin-bottom: 12px;
+
+        @media (max-width: 575px) {
+            margin-right: 0;
+        }
     }
 
     & .btn-border-red {

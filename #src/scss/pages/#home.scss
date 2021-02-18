@@ -447,7 +447,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -16px;
-
+        justify-content: center;
         @media (max-width: $md2+px) {
             margin: 0 -7.5px;
         }
@@ -473,13 +473,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px 30px;
+            padding: 15px 60px;
             background-color: rgba(#f7f5f2, 0.5);
             min-height: 240px;
             transition: all .2s ease;
 
             @media (max-width: 1265px) {
                 min-height: 180px;
+            }
+
+            @media (max-width: $md2+px) {
+                padding: 15px 30px;
             }
 
             @media (max-width: $md4+px) {
@@ -538,4 +542,8 @@
 
 .contacts-section {
     background-color: transparent;
+
+    @media (max-width: 599px) {
+        padding-top: 150px;
+    }
 }

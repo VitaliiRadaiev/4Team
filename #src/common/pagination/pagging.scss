@@ -4,7 +4,7 @@
     align-items: center;
     margin: 30px 0 50px;
 
-    @media (max-width: $md4+px) {
+    @media (max-width: 374px) {
         flex-wrap: wrap;
     }
 
@@ -19,7 +19,7 @@
         border-radius: 4px;
         transition: all .3s ease;
 
-        @media (max-width: $md4+px) {
+        @media (max-width: 374px) {
             margin: 0 20px;
         }
 
@@ -49,6 +49,10 @@
         margin: 0 40px;
 
         @media (max-width: $md4+px) {
+            margin: 0 15px;
+        }
+
+        @media (max-width: 374px) {
             order: -1;
             flex: 0 0 100%;
             justify-content: center;
