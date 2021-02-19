@@ -25,9 +25,10 @@ if(textWrapper.length) {
   textWrapper.forEach(text => {
     let letters = text.querySelector('.letters');
     let replaceLetter = new Promise(resolve => {
-        letters.innerHTML = letters.textContent.replace(/./g, "<span class='letter'>$&</span>");
+        letters.innerHTML = letters.textContent.replace(/./g, "<div class='letter'>$&</div>");
         resolve();
     }).then(() => {
+      
       tl.add({
         targets: text.querySelector('.line'),
         scaleY: [0,1],
@@ -37,7 +38,7 @@ if(textWrapper.length) {
       })
       .add({
         targets: text.querySelector('.line'),
-        translateX: [0, text.querySelector('.letters').getBoundingClientRect().width + 15],
+        translateX: [0, text.querySelector('.letters').getBoundingClientRect().width + 20],
         easing: "easeOutExpo",
         duration: 700,
         delay: 100
