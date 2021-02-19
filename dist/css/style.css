@@ -2237,6 +2237,10 @@ textarea.form__input {
   max-width: 1155px;
   margin: 0 auto 99px;
   padding: 0 15px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.5em;
 }
 
 .slider-testimonials__brends {
@@ -2792,8 +2796,18 @@ textarea.form__input {
   line-height: 1.5em;
 }
 
-.textAnimation .typed-strings {
+.textAnimation {
   position: relative;
+}
+
+.textAnimation .typed-strings {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .textAnimation .line {
@@ -2808,7 +2822,7 @@ textarea.form__input {
           transform-origin: 0 50%;
 }
 
-.textAnimation .line1 {
+.textAnimation .line {
   top: 0;
   left: 0;
 }
@@ -3768,6 +3782,10 @@ textarea.form__input {
     font-size: 50px;
   }
 
+  .list-dots-red {
+    margin-left: 10px;
+  }
+
   .diagnostic-block {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -4168,6 +4186,10 @@ textarea.form__input {
     margin-bottom: 20px;
   }
 
+  .slider-testimonials__text {
+    font-size: 22px;
+  }
+
   .partners {
     margin-bottom: 90px;
   }
@@ -4500,6 +4522,10 @@ textarea.form__input {
 
   .testimonials-block {
     margin-bottom: 60px;
+  }
+
+  .slider-testimonials__text {
+    font-size: 18px;
   }
 
   .partners {

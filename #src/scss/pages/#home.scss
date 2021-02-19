@@ -360,10 +360,18 @@
 
     &__text {
         max-width: 1155px;
-  
         margin: 0 auto 99px;
         padding: 0 15px;
-
+        font-family: $regular;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.5em;
+        @media (max-width: $md3+px) {
+            font-size: 22px;
+        }
+        @media (max-width: $md4+px) {
+            font-size: 18px;
+        }
     
     }
 

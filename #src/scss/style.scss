@@ -337,7 +337,11 @@ body {
 
 .list-dots-red {
     margin-bottom: 65px;
-
+    
+    @media (max-width: $md2+px) {
+        margin-left: 10px;
+    }
+    
     @media (max-width: $md3+px) {
         margin-bottom: 40px;
     }
