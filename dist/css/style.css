@@ -2808,6 +2808,7 @@ textarea.form__input {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   white-space: nowrap;
+  opacity: 0;
 }
 
 .textAnimation .line {

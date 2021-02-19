@@ -28,8 +28,11 @@ if(textWrapper.length) {
         letters.innerHTML = letters.textContent.replace(/./g, "<div class='letter'>$&</div>");
         resolve();
     }).then(() => {
-      
       tl.add({
+        targets: text,
+        opacity: 1,
+      })
+      .add({
         targets: text.querySelector('.line'),
         scaleY: [0,1],
         opacity: [0.5,1],
