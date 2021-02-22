@@ -1986,17 +1986,17 @@ textarea.form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .list-block__body > ul {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(50% - 20px);
           flex: 0 1 calc(50% - 20px);
+  max-width: 633px;
+}
+
+.list-block__body > ul:first-child {
+  margin-right: 43px;
 }
 
 .hero__bottom-btn {
@@ -3892,6 +3892,22 @@ textarea.form__input {
     font-size: 20px;
   }
 
+  .list-block__body {
+    display: block;
+  }
+
+  .list-block__body > ul {
+    max-width: none;
+  }
+
+  .list-block__body > ul:first-child {
+    margin-right: 0;
+  }
+
+  .list-block__body > ul:first-child {
+    margin-bottom: 0;
+  }
+
   .team {
     margin-bottom: 120px;
   }
@@ -4160,14 +4176,6 @@ textarea.form__input {
   }
 
   .list-block {
-    margin-bottom: 0;
-  }
-
-  .list-block__body {
-    display: block;
-  }
-
-  .list-block__body > ul:first-child {
     margin-bottom: 0;
   }
 

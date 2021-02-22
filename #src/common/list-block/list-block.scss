@@ -11,17 +11,27 @@
 
     &__body {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md2+px) {
             display: block;
         }
 
         & > ul {
             flex: 0 1 calc(50% - 20px);
+            max-width: 633px;
 
-            @media (max-width: $md3+px) {
+            @media (max-width: $md2+px) {
+                max-width: none;
+            }
+
+            &:first-child {
+                margin-right: 43px;
+
+                @media (max-width: $md2+px) {
+                   margin-right: 0;
+                }
+            }
+            @media (max-width: $md2+px) {
                 &:first-child {
                     margin-bottom: 0;
                 }
