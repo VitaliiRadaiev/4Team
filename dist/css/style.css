@@ -3304,7 +3304,7 @@ textarea.form__input {
 }
 
 .hr-audit-info .btn-sm {
-  margin-left: 35px;
+  margin-left: 45px;
 }
 
 .hr-audit-info__title {
@@ -3327,7 +3327,7 @@ textarea.form__input {
       -ms-flex: 0 1 calc(50% - 20px);
           flex: 0 1 calc(50% - 20px);
   margin-bottom: 60px;
-  padding-left: 35px;
+  padding-left: 45px;
 }
 
 .hr-audit-info__item-title {
@@ -3339,7 +3339,7 @@ textarea.form__input {
 .hr-audit-info__item-title-num {
   position: absolute;
   top: 0;
-  left: -40px;
+  left: -50px;
   font-family: Montserrat-Bold, Arial, sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -4375,8 +4375,16 @@ textarea.form__input {
     margin-bottom: 30px;
   }
 
+  .hr-audit-page .block-detail .block-detail__title {
+    font-size: 50px;
+  }
+
   .hr-audit-info {
     margin-bottom: 90px;
+  }
+
+  .hr-audit-info .btn-sm {
+    margin-left: 34px;
   }
 
   .hr-audit-info__title {
@@ -4387,10 +4395,19 @@ textarea.form__input {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+    padding-left: 34px;
+  }
+
+  .hr-audit-info__list > li:last-child {
+    margin-bottom: 20px;
   }
 
   .hr-audit-info__item-title {
     max-width: 450px;
+  }
+
+  .hr-audit-info__item-title-num {
+    left: -40px;
   }
 
   .career-guidance-page .block-detail .link-back {
