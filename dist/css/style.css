@@ -1660,6 +1660,7 @@ textarea.form__input {
   font-size: 28px;
   line-height: 1.21em;
   color: #A2A2A2;
+  margin-bottom: 40px;
 }
 
 .block-detail__main {
@@ -3784,7 +3785,7 @@ textarea.form__input {
   }
 
   .list-dots-red {
-    margin-left: 10px;
+    margin-left: 16px;
   }
 
   .diagnostic-block {
