@@ -20,6 +20,12 @@
 
         & > ul {
             flex: 0 1 calc(50% - 20px);
+
+            @media (max-width: $md3+px) {
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
         }
 
     }

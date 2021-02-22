@@ -1942,7 +1942,7 @@ textarea.form__input {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.3333%;
           flex: 0 1 33.3333%;
-  padding: 0 15px;
+  padding: 0 30px;
   text-align: center;
   margin-bottom: 98px;
 }
@@ -1965,7 +1965,7 @@ textarea.form__input {
 
 .red-block__text {
   color: #fff;
-  max-width: 495px;
+  max-width: 465px;
   margin: 0 auto;
 }
 
@@ -3888,6 +3888,10 @@ textarea.form__input {
     margin-bottom: 120px;
   }
 
+  .red-block__btn-wrap .btn {
+    font-size: 20px;
+  }
+
   .team {
     margin-bottom: 120px;
   }
@@ -4151,12 +4155,20 @@ textarea.form__input {
     margin-bottom: 40px;
   }
 
+  .red-block__btn-wrap .btn {
+    font-size: 18px;
+  }
+
   .list-block {
     margin-bottom: 0;
   }
 
   .list-block__body {
     display: block;
+  }
+
+  .list-block__body > ul:first-child {
+    margin-bottom: 0;
   }
 
   .hero__bottom-btn_left {
@@ -4514,7 +4526,11 @@ textarea.form__input {
 
   .red-block {
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+  }
+
+  .red-block__btn-wrap .btn {
+    font-size: 16px;
   }
 
   .team {

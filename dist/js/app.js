@@ -1,4 +1,5 @@
-! function(e) {
+window.onload = () => {
+    ! function(e) {
     var t = {};
 
     function n(r) {
@@ -8176,7 +8177,7 @@
     }
 }]);
 //# sourceMappingURL=app.js.map;
-//SlideToggle
+    //SlideToggle
 let _slideUp = (target, duration = 500) => {
 	target.style.transitionProperty = 'height, margin, padding';
 	target.style.transitionDuration = duration + 'ms';
@@ -8348,7 +8349,7 @@ if($('.anchor').length>0) {
 // === Плавный скрол на якорях ==================================================================
 
 ;
-// //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
+    // //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 // let forms = document.querySelectorAll('form');
 // if (forms.length > 0) {
 // 	for (let index = 0; index < forms.length; index++) {
@@ -8860,7 +8861,7 @@ if(priceSlider) {
 }
 
 // == // PRICE SLIDER =====================================================;
-// Dynamic Adapt v.1
+    // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
 // e.x. data-da="item,2,992"
 // Andrikanych Yevhen 2020
@@ -8997,7 +8998,7 @@ if(priceSlider) {
 		//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	}
 }());;
-{
+    {
     let itemDropDown = document.querySelectorAll('.item-drop-down');
     if(itemDropDown.length) {
         itemDropDown.forEach(item => {
@@ -9016,7 +9017,7 @@ if(priceSlider) {
     }
 }
 ;
-// ==== Popup form handler====
+    // ==== Popup form handler====
 
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
@@ -9145,7 +9146,23 @@ document.addEventListener('keydown', function(e) {
 		}
 	})();
 // === AND Polyfill ===;
-//BildSlider
+    let redBlock = document.querySelector('.red-block');
+if(redBlock) {
+    let titles = redBlock.querySelectorAll('.red-block__card-title');
+    let heightArr = [];
+    
+    titles.forEach(title => {
+        heightArr.push(+title.clientHeight);
+    })
+
+    let height = Math.max(...heightArr);
+
+    titles.forEach(title => {
+        title.style.minHeight = height + 'px';
+    })
+}
+;
+    //BildSlider
 let sliders = document.querySelectorAll('._swiper');
 if (sliders) {
 	for (let index = 0; index < sliders.length; index++) {
@@ -9229,7 +9246,7 @@ if (sliders) {
         });
     }
 };
-// {
+    // {
 //     let textAnimationBlocks = document.querySelectorAll('.textAnimation');
 //     if(textAnimationBlocks.length > 0) {
 //         textAnimationBlocks.forEach(item => {
@@ -9330,15 +9347,18 @@ if(textWrapper.length) {
 
 
 
-{
-    let buttonsContact = document.querySelectorAll('.btn-cont');
-    if(buttonsContact.length) {
-        buttonsContact.forEach(btn => {
-            let text = btn.innerText;
-            btn.innerText = '';
-            btn.insertAdjacentHTML('afterbegin', `<span>${text}</span>`)
-            
-        })
+    {
+        let buttonsContact = document.querySelectorAll('.btn-cont');
+        if(buttonsContact.length) {
+            buttonsContact.forEach(btn => {
+                let text = btn.innerText;
+                btn.innerText = '';
+                btn.insertAdjacentHTML('afterbegin', `<span>${text}</span>`)
+                
+            })
+        }
     }
 }
+
+
 

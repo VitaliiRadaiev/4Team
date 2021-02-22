@@ -13,7 +13,7 @@
 
     @media (max-width: $md4+px) {
         padding-top: 60px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     &__bg-img {
@@ -52,7 +52,7 @@
 
         & > li {
             flex: 0 1 33.3333%;
-            padding: 0 15px;
+            padding: 0 30px;
             text-align: center;
             margin-bottom: 98px;
 
@@ -68,6 +68,7 @@
     }
 
     &__card {
+
     }
 
     
@@ -89,16 +90,27 @@
 
     &__text {
         color: #fff;
-        max-width: 495px;
+        max-width: 465px;
         margin: 0 auto;
     }
 
     &__btn-wrap {
         text-align: center;
         margin-top: -40px;
-
         @media (max-width: 575px) {
             margin-top: 0;
+        }
+
+        & .btn {
+            @media (max-width: $md2+px) {
+                font-size: 20px;
+            }
+            @media (max-width: $md3+px) {
+                font-size: 18px;
+            }
+            @media (max-width: $md4+px) {
+                font-size: 16px;
+            }
         }
     }
 }
