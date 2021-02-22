@@ -1,9 +1,9 @@
 .red-block {
     position: relative;
-    padding-top: 169px;
-    padding-bottom: 114px;
+    padding-top: 109px;
+    padding-bottom: 64px;
 
-    margin-bottom: 176px;
+    margin-bottom: 136px;
     @include mb();
 
     @media (max-width: $md3+px) {
