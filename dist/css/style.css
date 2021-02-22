@@ -3024,7 +3024,7 @@ textarea.form__input {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 37.4%;
           flex: 0 0 37.4%;
-  padding-right: 30px;
+  padding-right: 70px;
 }
 
 .transformation-page .block-detail .block-detail__top-column-1 .block-detail__title {
@@ -4044,6 +4044,10 @@ textarea.form__input {
     margin-bottom: 120px;
   }
 
+  .transformation-type__body .btn {
+    font-size: 20px;
+  }
+
   .hr-audit-info {
     margin-bottom: 120px;
   }
@@ -4348,6 +4352,10 @@ textarea.form__input {
     padding-bottom: 60px;
   }
 
+  .transformation-type__body .btn {
+    font-size: 18px;
+  }
+
   .transformation-type__card {
     max-width: none;
     width: auto;
@@ -4637,6 +4645,10 @@ textarea.form__input {
 
   .transformation-type {
     margin-bottom: 60px;
+  }
+
+  .transformation-type__body .btn {
+    font-size: 16px;
   }
 
   .hr-audit-info {
