@@ -1595,6 +1595,7 @@ textarea.form__input {
 
 .block-detail .container {
   position: relative;
+  padding-right: 7.55208vw;
 }
 
 .block-detail__decor {
@@ -2358,6 +2359,7 @@ textarea.form__input {
 
 .careers .container {
   max-width: 1572px;
+  padding-right: 7.55208vw;
 }
 
 .careers .title {
@@ -2834,6 +2836,14 @@ textarea.form__input {
   line-height: 1em;
 }
 
+.recruitment-page .container {
+  padding-right: 7.55208vw;
+}
+
+.diagnostics-page .container {
+  padding-right: 7.55208vw;
+}
+
 .diagnostics-page .block-detail .link-back {
   margin-bottom: 70px;
 }
@@ -2866,6 +2876,10 @@ textarea.form__input {
 
 .diagnostics-page .block-detail__main-column-1 {
   padding-top: 0;
+}
+
+.create-office-page .container {
+  padding-right: 7.55208vw;
 }
 
 .create-office-page .block-detail {
@@ -2974,6 +2988,10 @@ textarea.form__input {
   text-align: center;
 }
 
+.diagnostic-team-page .container {
+  padding-right: 7.55208vw;
+}
+
 .diagnostic-team-page .block-detail {
   padding-bottom: 80px;
 }
@@ -3007,6 +3025,10 @@ textarea.form__input {
 
 .diagnostic-team-page .block-detail .block-detail__top-column-2.text-content p {
   margin-bottom: 1.3em;
+}
+
+.transformation-page .container {
+  padding-right: 7.55208vw;
 }
 
 .transformation-page .block-detail .link-back {
@@ -3262,6 +3284,10 @@ textarea.form__input {
   color: #ec201c;
 }
 
+.hr-audit-page .container {
+  padding-right: 7.55208vw;
+}
+
 .hr-audit-page .block-detail {
   padding-bottom: 80px;
 }
@@ -3352,6 +3378,10 @@ textarea.form__input {
   max-width: 638px;
 }
 
+.career-guidance-page .container {
+  padding-right: 7.55208vw;
+}
+
 .career-guidance-page .block-detail .link-back {
   margin-bottom: 70px;
 }
@@ -3384,6 +3414,10 @@ textarea.form__input {
 
 .clients-page {
   padding-top: 180px;
+}
+
+.clients-page .container {
+  padding-right: 7.55208vw;
 }
 
 @media (min-width: 992px) {
@@ -3536,6 +3570,46 @@ textarea.form__input {
     top: -100px;
     right: -60px;
     width: 50%;
+  }
+
+  .block-detail .container {
+    padding: 0 2.08333vw;
+  }
+
+  .careers .container {
+    padding: 0 2.08333vw;
+  }
+
+  .recruitment-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .diagnostics-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .create-office-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .diagnostic-team-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .transformation-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .hr-audit-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .career-guidance-page .container {
+    padding: 0 2.08333vw;
+  }
+
+  .clients-page .container {
+    padding: 0 2.08333vw;
   }
 }
 

@@ -1,4 +1,11 @@
 .hr-audit-page {
+    & .container {
+        padding-right: 7.55208vw;
+
+        @media (max-width: 1439px) {
+            padding: 0 2.08333vw;
+        }
+    }
     & .block-detail {
         padding-bottom: 80px;
 
