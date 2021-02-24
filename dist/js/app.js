@@ -3262,11 +3262,11 @@ window.onload = () => {
     });
     t.CLASSES = {
         active: "is-active",
-        scrolling: "is-scrolling",
+        //scrolling: "is-scrolling",
         overflow: "is-overflow",
         menuOpen: "is-menu-open",
         noTouch: "no-touch",
-        hide: "is-hidden"
+        //hide: "is-hidden"
     }, t.VIEWPORTS = {
         tablet: 1024
     }, t.SLIDER_BUTTONS = {
@@ -9160,6 +9160,43 @@ if(redBlock) {
     titles.forEach(title => {
         title.style.minHeight = height + 'px';
     })
+}
+;
+    {
+    let header = document.querySelector('.header');
+    if(header) {
+        let isScroll = window.pageYOffset;
+        let menuList = document.querySelector('.menu__list');
+        let wrapper = document.querySelector('.wrapper');
+
+        window.addEventListener('scroll', () => {
+            if(window.pageYOffset > isScroll) {
+                if(window.pageYOffset > header.clientHeight) {
+                    header.style.transform = "translateY(-100%)";
+                    if(window.pageYOffset > 50) {
+                        header.classList.add('is-scrolling');
+                    } else {
+                        header.classList.remove('is-scrolling');
+                    }
+                    // for(let el of menuList.children) {
+                    //     el.classList.remove('_active');
+                    // }
+                    // wrapper.classList.remove('cover')
+                     isScroll = window.pageYOffset;
+                }
+            } else if(window.pageYOffset < isScroll) {
+                if(window.pageYOffset > 50) {
+                    header.classList.add('is-scrolling');
+                } else {
+                    header.classList.remove('is-scrolling');
+                }
+                header.style.transform = "translateY(0%)";
+                isScroll = window.pageYOffset;
+                
+            }
+            
+        });
+    }
 }
 ;
     //BildSlider

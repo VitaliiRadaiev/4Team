@@ -3261,11 +3261,11 @@
     });
     t.CLASSES = {
         active: "is-active",
-        scrolling: "is-scrolling",
+        //scrolling: "is-scrolling",
         overflow: "is-overflow",
         menuOpen: "is-menu-open",
         noTouch: "no-touch",
-        hide: "is-hidden"
+        //hide: "is-hidden"
     }, t.VIEWPORTS = {
         tablet: 1024
     }, t.SLIDER_BUTTONS = {

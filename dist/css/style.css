@@ -3420,6 +3420,14 @@ textarea.form__input {
   padding-right: 7.55208vw;
 }
 
+.advantage__bracket {
+  z-index: 3;
+}
+
+.advantage__image-group.advantage__image-group_2 img:last-child {
+  z-index: 3;
+}
+
 @media (min-width: 992px) {
   .btn-border-red:hover {
     color: #fff;

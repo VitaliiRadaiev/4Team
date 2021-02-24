@@ -394,3 +394,24 @@ body {
 @import "pages/#career-guidance";
 @import "pages/#clients";
 // == // pages ======================
+
+
+
+
+
+
+// == advantage =============
+.advantage__bracket {
+    z-index: 3;
+}
+.advantage__image-group {
+    &.advantage__image-group_2 {
+        & img {
+            &:last-child {
+                z-index: 3;
+            }
+        }
+    }
+
+}
+// // == advantage =============
