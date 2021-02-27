@@ -9231,13 +9231,15 @@ if (sliders) {
 {
     let testimonials = document.querySelector('.testimonials-block');
     if(testimonials) {
-        let dataSlider = new Swiper(testimonials.querySelector('.slider-testimonials__body'), {
+        let dataSlider;
+        let dataBottomSlider;
+            dataSlider = new Swiper(testimonials.querySelector('.slider-testimonials__body'), {
             slidesPerView: 1,
             spaceBetween: 20,
             speed: 600,
             //touchRatio: 0,
             //simulateTouch: false,
-            loop: true,
+           // loop: true,
             //preloadImages: false,
             //lazy: true,
             // Dotts
@@ -9271,16 +9273,58 @@ if (sliders) {
                 },
             },
             */
-            on: {
-                lazyImageReady: function () {
-                    ibg();
-                },
-            }
             // And if we need scrollbar
             //scrollbar: {
             //	el: '.swiper-scrollbar',
             //},
         });
+
+        dataBottomSlider = new Swiper(testimonials.querySelector('.slider-testimonials__bottom'), {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            speed: 600,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            //touchRatio: 0,
+            //simulateTouch: false,
+            //loop: true,
+            //preloadImages: false,
+            //lazy: true,
+            // Dotts
+            //pagination: {
+            //	el: '.slider-quality__pagging',
+            //	clickable: true,
+            //},
+            // Arrows
+            /*
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1268: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+            */
+            // And if we need scrollbar
+            //scrollbar: {
+            //	el: '.swiper-scrollbar',
+            //},
+        });
+
+        dataBottomSlider.controller.control = dataSlider;
+        dataSlider.controller.control = dataBottomSlider;
     }
 };
     // {
@@ -9316,20 +9360,24 @@ if(textWrapper.length) {
       tl.add({
         targets: text,
         opacity: 1,
+        duration: 100,
+        delay: 0,
       })
       .add({
         targets: text.querySelector('.line'),
         scaleY: [0,1],
         opacity: [0.5,1],
         easing: "easeOutExpo",
-        duration: 700
+        duration: 700,
+        offset: '-=200',
       })
       .add({
         targets: text.querySelector('.line'),
         translateX: [0, text.querySelector('.letters').getBoundingClientRect().width + 20],
         easing: "easeOutExpo",
         duration: 700,
-        delay: 100
+        delay: 100,
+       // offset: '-=775',
       }).add({
         targets: text.querySelectorAll('.letter'),
         opacity: [0,1],
@@ -9340,9 +9388,9 @@ if(textWrapper.length) {
       }).add({
         targets: text,
         opacity: 0,
-        duration: 1000,
+        duration: 500,
         easing: "easeOutExpo",
-        delay: 1000
+        delay: 1000,
       });
     })
     

@@ -77,6 +77,10 @@
     &__filter-inner {
         flex: 1 1 auto;
 
+        & form {
+            display: flex;
+        }
+
         @media (max-width: $md2+px) {
             display: flex;
             overflow: auto;

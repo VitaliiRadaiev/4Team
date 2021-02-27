@@ -11,14 +11,11 @@
             text-align: center;
 
             & .title {
-                font-size: 100px;
+                font-size: 80px;
                 text-transform: uppercase;
                 font-family: $semiBold;
                 font-weight: 600;
                 letter-spacing: 0em;
-                @media (max-width: 1599px) {
-                    font-size: 80px;
-                }
 
                 @media (max-width: 1267px) {
                     font-size: 60px;

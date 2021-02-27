@@ -1,4 +1,6 @@
 .hero  {
+
+
     &__inner {
         @media (max-width: 400px) {
             padding-bottom: 80px;
@@ -116,7 +118,12 @@
     position: relative;
     transition: all .3s ease;
     height: 3em;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.02em;
+    font-family: $semiBold;
+
+    @media (max-width: $md3+px) {
+        font-size: 18px;
+    }
 
     & > span {
         transition: all .4s ease;
@@ -232,6 +239,7 @@
     margin-bottom: 180px;
     @include mb();
 
+
     & .title {
         margin-bottom: 62px;
     }
@@ -244,7 +252,8 @@
 
 .slider-testimonials {
     position: relative;
-
+    width: auto;
+    min-width: 0;
     &__buttons {
         position: absolute;
         top: 0;
@@ -396,6 +405,54 @@
                 max-height: 100%;
             }
         }
+    }
+
+    &__bottom {
+        overflow: hidden;
+        min-width: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        & * {
+            box-sizing: border-box;
+        }
+    }
+
+    &__bottom-item {
+        padding: 20px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+
+        @media (min-width: 992px) {
+            &:hover {
+                & img {
+                    mix-blend-mode: normal;
+                    opacity: 1
+                    
+                }
+            }
+        }
+
+        &:not(.swiper-slide-active){
+            background-color: #fff;
+
+            & img {
+                mix-blend-mode: luminosity;
+                opacity: 0.2;
+                
+            }
+        }
+        
+        & img {
+            width: 100%;
+            height: auto;
+            max-width: 240px;
+            transition: all .3s ease;
+        }
+
     }
 }
 

@@ -73,7 +73,8 @@ body.lock {
   font-family: Montserrat-SemiBold, Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.666em;
+  line-height: 1.6em;
+  letter-spacing: 0;
 }
 
 .title-2 {
@@ -1026,23 +1027,23 @@ button.swiper-pagination-bullet {
   fill: #000;
 }
 
-.header._colorIcon .logo__image_active {
+.header._colorIcon:not(.is-menu-open) .logo__image_active {
   opacity: 1;
 }
 
-.header._colorIcon .logo__image_static {
+.header._colorIcon:not(.is-menu-open) .logo__image_static {
   opacity: 0;
 }
 
-.header._colorIcon .header__lang {
+.header._colorIcon:not(.is-menu-open) .header__lang {
   color: #000;
 }
 
-.header._colorIcon .burger span {
+.header._colorIcon:not(.is-menu-open) .burger span {
   background-color: #000;
 }
 
-.header._colorIcon .header__links .icon {
+.header._colorIcon:not(.is-menu-open) .header__links .icon {
   fill: #000;
 }
 
@@ -2073,7 +2074,8 @@ textarea.form__input {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   height: 3em;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
+  font-family: Montserrat-SemiBold, Arial, sans-serif;
 }
 
 .btn-cont > span {
@@ -2148,6 +2150,8 @@ textarea.form__input {
 
 .slider-testimonials {
   position: relative;
+  width: auto;
+  min-width: 0;
 }
 
 .slider-testimonials__buttons {
@@ -2282,6 +2286,52 @@ textarea.form__input {
   max-height: 100%;
 }
 
+.slider-testimonials__bottom {
+  overflow: hidden;
+  min-width: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider-testimonials__bottom * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider-testimonials__bottom-item {
+  padding: 20px 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100px;
+}
+
+.slider-testimonials__bottom-item:not(.swiper-slide-active) {
+  background-color: #fff;
+}
+
+.slider-testimonials__bottom-item:not(.swiper-slide-active) img {
+  mix-blend-mode: luminosity;
+  opacity: 0.2;
+}
+
+.slider-testimonials__bottom-item img {
+  width: 100%;
+  height: auto;
+  max-width: 240px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .partners {
   text-align: center;
   margin-bottom: 186px;
@@ -2396,6 +2446,12 @@ textarea.form__input {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.careers__filter-inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .careers__filter-btn {
@@ -2655,7 +2711,7 @@ textarea.form__input {
 }
 
 .about-page .hero__title .title {
-  font-size: 100px;
+  font-size: 80px;
   text-transform: uppercase;
   font-family: Montserrat-SemiBold, Arial, sans-serif;
   font-weight: 600;
@@ -3428,6 +3484,15 @@ textarea.form__input {
   z-index: 3;
 }
 
+.error404 .careers-detail-page__content {
+  text-align: center;
+  padding-top: 160px;
+}
+
+.error404 .careers-detail-page__content .careers-detail-page__column-1 {
+  margin-right: 0;
+}
+
 @media (min-width: 992px) {
   .btn-border-red:hover {
     color: #fff;
@@ -3514,6 +3579,11 @@ textarea.form__input {
     opacity: 0.6;
   }
 
+  .slider-testimonials__bottom-item:hover img {
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+
   .partners__list-item:hover {
     background-color: #f7f5f2;
     -webkit-transform: translateY(-5px);
@@ -3560,12 +3630,6 @@ textarea.form__input {
 @media (max-width: 1920px) {
   .hero__bottom-btn_left {
     left: -105px;
-  }
-}
-
-@media (max-width: 1599px) {
-  .about-page .hero__title .title {
-    font-size: 80px;
   }
 }
 
@@ -4134,6 +4198,11 @@ textarea.form__input {
   .hr-audit-info {
     margin-bottom: 120px;
   }
+
+  .error404 .careers-detail-page__content {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -4280,6 +4349,10 @@ textarea.form__input {
 
   .hero__bottom-btn_right {
     display: none;
+  }
+
+  .btn-cont {
+    font-size: 18px;
   }
 
   .team {
@@ -4499,6 +4572,11 @@ textarea.form__input {
 
   .career-guidance-page .block-detail .block-detail__top-column-1 .block-detail__title {
     font-size: 38px;
+  }
+
+  .error404 .careers-detail-page__content {
+    padding-top: 150px;
+    padding-bottom: 60px;
   }
 }
 

@@ -31,20 +31,24 @@ if(textWrapper.length) {
       tl.add({
         targets: text,
         opacity: 1,
+        duration: 100,
+        delay: 0,
       })
       .add({
         targets: text.querySelector('.line'),
         scaleY: [0,1],
         opacity: [0.5,1],
         easing: "easeOutExpo",
-        duration: 700
+        duration: 700,
+        offset: '-=200',
       })
       .add({
         targets: text.querySelector('.line'),
         translateX: [0, text.querySelector('.letters').getBoundingClientRect().width + 20],
         easing: "easeOutExpo",
         duration: 700,
-        delay: 100
+        delay: 100,
+       // offset: '-=775',
       }).add({
         targets: text.querySelectorAll('.letter'),
         opacity: [0,1],
@@ -55,9 +59,9 @@ if(textWrapper.length) {
       }).add({
         targets: text,
         opacity: 0,
-        duration: 1000,
+        duration: 500,
         easing: "easeOutExpo",
-        delay: 1000
+        delay: 1000,
       });
     })
     

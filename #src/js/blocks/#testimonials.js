@@ -30,13 +30,15 @@ if (sliders) {
 {
     let testimonials = document.querySelector('.testimonials-block');
     if(testimonials) {
-        let dataSlider = new Swiper(testimonials.querySelector('.slider-testimonials__body'), {
+        let dataSlider;
+        let dataBottomSlider;
+            dataSlider = new Swiper(testimonials.querySelector('.slider-testimonials__body'), {
             slidesPerView: 1,
             spaceBetween: 20,
             speed: 600,
             //touchRatio: 0,
             //simulateTouch: false,
-            loop: true,
+           // loop: true,
             //preloadImages: false,
             //lazy: true,
             // Dotts
@@ -70,15 +72,57 @@ if (sliders) {
                 },
             },
             */
-            on: {
-                lazyImageReady: function () {
-                    ibg();
-                },
-            }
             // And if we need scrollbar
             //scrollbar: {
             //	el: '.swiper-scrollbar',
             //},
         });
+
+        dataBottomSlider = new Swiper(testimonials.querySelector('.slider-testimonials__bottom'), {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            speed: 600,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            //touchRatio: 0,
+            //simulateTouch: false,
+            //loop: true,
+            //preloadImages: false,
+            //lazy: true,
+            // Dotts
+            //pagination: {
+            //	el: '.slider-quality__pagging',
+            //	clickable: true,
+            //},
+            // Arrows
+            /*
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1268: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+            */
+            // And if we need scrollbar
+            //scrollbar: {
+            //	el: '.swiper-scrollbar',
+            //},
+        });
+
+        dataBottomSlider.controller.control = dataSlider;
+        dataSlider.controller.control = dataBottomSlider;
     }
 }

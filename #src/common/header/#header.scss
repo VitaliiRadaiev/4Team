@@ -27,26 +27,29 @@
     }
 
     &._colorIcon {
-        & .logo__image_active {
-            opacity: 1;
-        }
-
-        & .logo__image_static {
-            opacity: 0;
-        }
-
-        & .header__lang {
-            color: #000;
-        }
-
-        & .burger span {
-            background-color: #000;
-        }
-
-        & .header__links {
-            & .icon {
-                fill: #000;
+        &:not(.is-menu-open) {
+            & .logo__image_active {
+                opacity: 1;
+            }
+    
+            & .logo__image_static {
+                opacity: 0;
+            }
+    
+            & .header__lang {
+                color: #000;
+            }
+    
+            & .burger span {
+                background-color: #000;
+            }
+    
+            & .header__links {
+                & .icon {
+                    fill: #000;
+                }
             }
         }
+
     }
 }

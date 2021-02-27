@@ -179,7 +179,8 @@ body {
         font-family: $semiBold;
         font-size: 24px;
         font-weight: 700;
-        line-height: 1.666em;
+        line-height: 1.6em;
+        letter-spacing: 0;
 
         @media (max-width: $md3+px) {
             font-size: 20px;
@@ -415,3 +416,19 @@ body {
 
 }
 // // == advantage =============
+
+
+
+// == page 404 =============
+.error404  {
+    & .careers-detail-page__content {
+        text-align: center;
+        padding-top: 160px;
+        @include pd();
+
+        & .careers-detail-page__column-1 {
+            margin-right: 0;
+        }
+    }
+}
+// // == page 404 =============
