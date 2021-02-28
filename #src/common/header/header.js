@@ -9,10 +9,11 @@
             if(window.pageYOffset > isScroll) {
                 if(window.pageYOffset > header.clientHeight) {
                     header.style.transform = "translateY(-100%)";
-                    if(window.pageYOffset > 50) {
+                    if(window.pageYOffset > 100) {
                         header.classList.add('is-scrolling');
                     } else {
                         header.classList.remove('is-scrolling');
+                        header.style.transform = "translateY(0%)";
                     }
                     // for(let el of menuList.children) {
                     //     el.classList.remove('_active');
@@ -21,7 +22,7 @@
                      isScroll = window.pageYOffset;
                 }
             } else if(window.pageYOffset < isScroll) {
-                if(window.pageYOffset > 50) {
+                if(window.pageYOffset > 100) {
                     header.classList.add('is-scrolling');
                 } else {
                     header.classList.remove('is-scrolling');

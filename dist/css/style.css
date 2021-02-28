@@ -4335,7 +4335,25 @@ textarea.form__input {
     margin-bottom: 0;
   }
 
+  .hero__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .hero__inner .hero__button {
+    margin-bottom: 40px;
+  }
+
   .hero__bottom-btn_left {
+    display: none;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -4843,6 +4861,10 @@ textarea.form__input {
 @media (max-width: 400px) {
   .hero__inner {
     padding-bottom: 80px;
+  }
+
+  .hero__inner .hero__button {
+    margin-bottom: 20px;
   }
 }
 

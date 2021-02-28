@@ -2,8 +2,22 @@
 
 
     &__inner {
+        @media (max-width: $md3+px) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            & .hero__button {
+                margin-bottom: 40px;
+            }
+        }
+
         @media (max-width: 400px) {
             padding-bottom: 80px;
+
+            & .hero__button {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -52,6 +66,7 @@
             }
 
             @media (max-width: $md3+px) {
+                display: none;
                 left: 50%;
                 transform: translateX(-50%);
                 bottom: 25px;
